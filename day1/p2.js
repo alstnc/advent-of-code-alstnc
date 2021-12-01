@@ -146,3 +146,20 @@ let data = [
   3256, 3257, 3258, 3262, 3264, 3265, 3263, 3272, 3274, 3255, 3254, 3266, 3267,
   3264, 3267, 3280, 3282,
 ];
+
+let total = 0;
+
+function search(a) {
+  for (let i = 0; i < a.length + 1; i++) {
+    let j = i + 1;
+    let sumA = a[i] + a[i + 1] + a[i + 2];
+    let sumB = a[j] + a[j + 1] + a[j + 2];
+    if (sumA < sumB) {
+      total++;
+    }
+  }
+  console.log(total);
+  return a;
+}
+
+search(data);

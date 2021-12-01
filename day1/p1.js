@@ -147,7 +147,6 @@ let data = [
   3264, 3267, 3280, 3282,
 ];
 
-console.log(data);
 let total = 0;
 
 function search(a) {
@@ -155,9 +154,9 @@ function search(a) {
     let j = i + 1;
     if (a[i] < a[j]) {
       total++;
-      console.log(total);
     }
   }
+  console.log(total);
   return a;
 }
 
